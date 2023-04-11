@@ -13,7 +13,7 @@ cv=pickle.load(open("vectorizer.pkl","rb"))
 def main():
     st.title("Email / SMS Spam Detector")
     st.subheader("Build with Streamlit & Python")
-    msg=st.text_input("Enter a Text : ")
+    msg=st.text_area("Enter your Message : ")
     if st.button("Predict"):
         data=[msg]
         vect = cv.transform(data).toarray()
