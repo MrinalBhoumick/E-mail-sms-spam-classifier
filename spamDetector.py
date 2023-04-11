@@ -11,7 +11,7 @@ cv=pickle.load(open("vectorizer.pkl","rb"))
 
 
 def main():
-    st.title("Email Spam Classification Apps")
+    st.title("Email / SMS Spam Detector")
     st.subheader("Build with Streamlit & Python")
     msg=st.text_input("Enter a Text : ")
     if st.button("Predict"):
